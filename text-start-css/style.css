@@ -1,0 +1,21 @@
+.indent {
+  text-indent: 16px;
+}
+.indent-custom {
+  text-indent: -16px;
+  padding-left: 16px;
+}
+.big::first-letter {
+  float: left;
+  font-size: 32px;
+  font-weight: bold;
+}
+.point {
+  text-align: center;
+}
+.point::after {
+  content: "+20点";
+  font-size: 13px;
+  padding: 7px;
+  background: yellow;
+}
