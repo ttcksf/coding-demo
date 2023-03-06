@@ -1,0 +1,16 @@
+/* 違うところにターゲットが移ると消える  */
+h1:target {
+  background: yellow;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  /* color: blue; */
+  /* opacity: 0.5; */
+  /* text-decoration: underline; */
+  background: blue;
+  padding: 5px;
+  color: white;
+}
