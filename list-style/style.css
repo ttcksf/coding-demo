@@ -1,0 +1,23 @@
+.list-style {
+  list-style: none;
+  list-style: square;
+  list-style: circle;
+  list-style: disc;
+  list-style: "-";
+  list-style: "+";
+}
+.list-style-type {
+  list-style: lower-alpha;
+  list-style: upper-roman;
+  list-style: lower-roman;
+}
+
+.ranking li:nth-child(1) {
+  list-style: url("./images/rank1.png") no-repeat;
+}
+.ranking li:nth-child(2) {
+  list-style: url("./images/rank2.png") no-repeat;
+}
+.ranking li:nth-child(3) {
+  list-style: url("./images/rank3.png") no-repeat;
+}
