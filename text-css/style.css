@@ -1,0 +1,15 @@
+/* cssで操作した方がJSと絡められるので柔軟性があり、メニュー表示や予約機能など「付けたり消したりすルことを自動化したい」に向いている */
+.deleted {
+  text-decoration: line-through;
+}
+/* markタグは色やサイズを指定できない */
+.full-mark {
+  /* background: yellow; */
+  background: pink;
+}
+.half-mark {
+  background: linear-gradient(transparent 20%, pink);
+}
+.wavy {
+  text-decoration: underline wavy blue;
+}
