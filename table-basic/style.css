@@ -1,0 +1,50 @@
+table {
+  width: 100%;
+  /* 枠線が被ったら一本に統一する */
+  border-collapse: collapse;
+  /* セルを全て同じ幅にしたい時 */
+  /* table-layout: fixed; */
+}
+td {
+  border: 1px solid #333;
+  /* 縦方向のテキスト配置 */
+  /* vertical-align: top; */
+  /* セルの枠線を変える */
+  /* border: 1px dotted #333; */
+}
+th {
+  border: 1px solid #333;
+  /* 横方向のテキスト配置 */
+  /* text-align: left; */
+}
+td,
+th {
+  padding: 8px;
+  width: 100px;
+}
+/* マウスホバー時のセルの背景色 */
+th:hover,
+td:hover {
+  background: #fbffb1;
+  cursor: pointer;
+}
+/* 特定のセルのみサイズを固定 */
+th:first-child {
+  width: 30px;
+}
+/* 特定の行だけ色をつける */
+tr:nth-child(2) {
+  background: #f7c04a;
+}
+thead {
+  background: #0e8388;
+  color: #fff;
+}
+tfoot {
+  background: #cbe4de;
+  font-size: 13px;
+}
+caption {
+  /* キャプションを下にしたい時 */
+  /* caption-side: bottom; */
+}

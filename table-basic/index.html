@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- trが1行分、tdが1セル、見出しのセルはth -->
+      <table>
+        <!-- <tr>
+          <th>aaa</th>
+          <th>aaa</th>
+          <th>aaa</th>
+        </tr> -->
+        <caption>
+          表１:プログラミング言語の図解
+        </caption>
+        <thead>
+          <tr>
+            <th colspan="3">プログラミング</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th></th>
+            <!-- 横方向にセルの結合 -->
+            <th colspan="2">言語</th>
+          </tr>
+          <tr>
+            <!-- <td>aaa</td> -->
+            <!-- 1行のうち最初のセルのみthにすれば縦方向にも見出しができる -->
+            <th>フロントエンド</th>
+            <td>HTML,CSS</td>
+            <td>JavaScript</td>
+          </tr>
+          <tr>
+            <!-- <td>bbb</td> -->
+            <!-- 縦方向にセルの結合 -->
+            <!-- 1行のうち最初のセルのみthにすれば縦方向にも見出しができる -->
+            <th rowspan="2">バックエンド</th>
+            <td>Ruby</td>
+            <td>PHP</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>Go</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <td colspan="3">Web開発に限った表ですので注意してください</td>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>
