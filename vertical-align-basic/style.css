@@ -1,0 +1,19 @@
+li {
+  list-style: none;
+}
+span {
+  padding: 8px;
+  border: 1px solid red;
+}
+.rank {
+  padding: 4px;
+  border: 1px solid blue;
+  margin-right: 8px;
+  /* vertical-align: baseline; */
+  /* vertical-align: text-top; */
+  /* vertical-align: text-bottom; */
+  /* vertical-align: top; */
+  /* vertical-align: middle; */
+  /* vertical-align: bottom; */
+  vertical-align: -8px;
+}
