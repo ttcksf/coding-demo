@@ -1,0 +1,27 @@
+body {
+  width: 500px;
+}
+.container {
+  margin-bottom: 48px;
+}
+.container h1 {
+  border-bottom: 3px solid #e21818;
+}
+.wrapper {
+  margin-bottom: 48px;
+}
+.wrapper h1 {
+  padding: 16px;
+  border-top: 3px solid #00235b;
+  text-align: center;
+}
+.wrapper h2 {
+  padding-left: 8px;
+  border-left: 8px solid #98dfd6;
+}
+.wrapper h3 {
+  padding-bottom: 8px;
+  padding-left: 8px;
+  border-bottom: 2px solid #ffdd83;
+  border-left: 2px solid #ffdd83;
+}
