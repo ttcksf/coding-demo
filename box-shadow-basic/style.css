@@ -1,0 +1,20 @@
+.container {
+  width: 500px;
+  height: 300px;
+  background: #9e4784;
+  border: 3px solid black;
+  margin-bottom: 48px;
+  /* 横の幅、縦の幅、ぼかす度合い、拡張量、色 */
+  box-shadow: 10px 10px 10px 10px #9e4784;
+}
+.wrapper {
+  width: 500px;
+  height: 300px;
+  background: #9e4784;
+  border: 3px solid black;
+  margin-bottom: 48px;
+  /* 横の幅、縦の幅、ぼかす度合い、拡張量、色 */
+  /* box-shadow: 0px 0px 10px 10px #9e4784; */
+  /* insetは内側に影をつける。均等にしたいので横の幅と縦の幅は０で良い */
+  box-shadow: inset 0px 0px 10px 10px #d27685;
+}
