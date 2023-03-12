@@ -1,0 +1,16 @@
+.container {
+  width: 500px;
+  height: 300px;
+  /* background: linear-gradient(90deg, #ffacac, #ffebb4); */
+  /* background: linear-gradient(0deg, #ffacac, #ffebb4); */
+  /* background: linear-gradient(180deg, #ffacac, #ffebb4); */
+  background: linear-gradient(45deg, #ffacac, #ffebb4);
+  margin-bottom: 16px;
+}
+.wrapper {
+  width: 500px;
+  height: 300px;
+  /* 放射線状にグラデーション */
+  /* background: radial-gradient(#ffacac, #ffebb4); */
+  background: radial-gradient(#ffebb4, #ffacac);
+}
