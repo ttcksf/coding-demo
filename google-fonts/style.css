@@ -1,0 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap");
+.fonts {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+//OSに依存するフォントは代替か画像にする
