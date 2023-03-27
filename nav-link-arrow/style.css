@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  width: 300px;
+}
+ul {
+  list-style: none;
+  background: #000;
+}
+li {
+  border-bottom: 1px solid #fff;
+  background: url("./images/arrow-right.png") right 16px center no-repeat;
+  padding: 8px 16px;
+}
+li:last-child {
+  border-bottom: none;
+}
+li:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
