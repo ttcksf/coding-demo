@@ -1,0 +1,13 @@
+.container img {
+  width: 300px;
+  /* 親要素の左上に配置して後続のテキストを回り込ませる */
+  float: left;
+  margin-right: 16px;
+}
+
+.wrapper img {
+  width: 300px;
+  /* 親要素の右上に配置して後続のテキストを回り込ませる */
+  float: right;
+  margin-left: 16px;
+}
