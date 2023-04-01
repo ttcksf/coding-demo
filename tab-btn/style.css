@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 320px;
+}
+ul {
+  list-style: none;
+  border-bottom: 2px solid #ff8c00;
+  /* floatの解除 */
+  overflow: hidden;
+}
+li {
+  background: #f5deb3;
+  float: left;
+  margin-right: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 4px;
+}
+li a {
+  color: #333;
+  text-decoration: none;
+}
+.current {
+  background: #ff8c00;
+}
+.current a {
+  color: #fff;
+  text-decoration: none;
+}
+p {
+  padding: 16px;
+  border-right: 2px solid #ff8c00;
+  border-left: 2px solid #ff8c00;
+  border-bottom: 2px solid #ff8c00;
+}
