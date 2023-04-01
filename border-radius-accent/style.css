@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 300px;
+  height: 300px;
+  background: #e9e9e9;
+  position: relative;
+}
+/* 左上 */
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* 右上 */
+/* img {
+  position: absolute;
+  top: 0;
+  right: 0;
+} */
+/* 左下 */
+/* img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+} */
+/* 右下 */
+/* img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+} */
