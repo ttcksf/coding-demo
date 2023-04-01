@@ -8,15 +8,15 @@
 }
 
 /* 高さ０を強制的に値をつける */
-/* .wrapper {
+.wrapper {
   overflow: hidden;
-} */
-.wrapper::after {
+}
+/* .wrapper::after {
   content: "";
   display: flex;
   height: 0;
   clear: both;
-}
+} */
 .wrapper .box1 {
   width: 300px;
   height: 300px;

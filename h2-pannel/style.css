@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.voice {
+  width: 300px;
+  margin-bottom: 16px;
+  /* 親要素を角丸にしても子要素が突き抜ける */
+  /* border-radius: 8px;
+  border: 1px solid #333; */
+}
+.voice-name {
+  border: 1px solid #ff8c00;
+  background: #ff8c00;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 4px;
+  text-align: center;
+  color: #fff;
+}
+.voice-text {
+  border: 1px solid #ff8c00;
+  padding: 16px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
