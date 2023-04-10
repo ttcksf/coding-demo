@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+form {
+  margin: 16px;
+}
+span {
+  background: #f0a04b;
+  padding: 10px;
+  border-radius: 8px;
+  color: #fff;
+}
+select {
+  appearance: none;
+  width: 200px;
+  border: 4px solid #f0a04b;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: url("./images/plus.png") right 8px center no-repeat;
+}
