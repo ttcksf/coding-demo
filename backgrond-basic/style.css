@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  /* background-image: url("./images/bg-test.jpg"); */
+  /* background-repeat: no-repeat; */
+  /* background-position-x: center; */
+  /* background-position-y: top; */
+  /* containは元の比率を保つため高さを調整しにくい */
+  /* background-size: contain; */
+  /* background-size: cover; */
+
+  /* まとめて書くとこうなる */
+  background: url("./images/bg-test.jpg") no-repeat center top / cover;
+}
