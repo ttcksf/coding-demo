@@ -22,4 +22,5 @@ button {
   cursor: pointer;
   border: none;
   border-radius: 0 16px 16px 0;
+  vertical-align: middle;
 }

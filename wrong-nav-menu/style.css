@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  border-top: 1px solid #fff;
+  background: #333;
+}
+ul {
+  list-style: none;
+}
+li {
+  border-bottom: 1px solid #fff;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  /* inline要素だとサイズや余白を指定できないためクリック領域が少ない */
+  display: inline-block;
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+}
