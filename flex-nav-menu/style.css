@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  background: #333;
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+li {
+  /* 拡大、縮小、サイズ(autoはテキスト幅と同じ) */
+  /* デフォルトの設定　親要素に合わせて縮小のみなので、余りができるが小さい画面でも見切れない */
+  /* flex: 0 1 auto; */
+
+  /* 親要素に合わせて拡大のみなので、小さい画面で見切れるが余りができない */
+  /* flex: 1 0 auto; */
+
+  /* 親要素に合わせて拡大と縮小を両方するで、小さい画面で見切れず余りもできない */
+  /* flex: 1 1 auto; */
+
+  /* 親要素に合わせて拡大と縮小を両方するで、小さい画面で見切れず余りもできない。初期サイズは150pxで指定しているが余りスペースとの兼ね合いがあるので実際のサイズになるとは限らない */
+  /* flex: 1 1 150px; */
+
+  /* 親要素に合わせて拡大と縮小を両方するで、小さい画面で見切れず余りもできない。初期サイズは150pxで固定にする */
+  flex: 0 1 150px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 8px 16px;
+  width: 100%;
+  text-align: center;
+}
+a:hover {
+  background: #666;
+}
