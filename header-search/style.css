@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  max-width: 100%;
+}
+.header-top {
+  display: flex;
+  max-width: 900px;
+  margin: 16px auto;
+  padding: 0 16px;
+}
+.header-top .search {
+  /* ロゴと下揃えになる */
+  margin-top: auto;
+  /* ロゴとの間に余白が自動で設定される */
+  margin-left: auto;
+}
+.header-bottom nav {
+  background: #333;
+}
+.header-bottom ul {
+  list-style: none;
+  display: flex;
+}
+.header-bottom li {
+  flex: 1 0 auto;
+}
+.header-bottom a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  padding: 8px 16px;
+}
+.header-bottom li:hover {
+  background: #666;
+}
