@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* デザイン次第では全体で統一しても良い */
+/* body {
+  max-width: 1200px;
+  margin: 0 auto;
+} */
+header {
+  width: 100%;
+  heigth: 40px;
+  /* max-widthの親要素に書かないとダメ */
+  background: #333;
+}
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  padding: 8px 16px;
+  width: 100%;
+}
+.logo {
+  margin-right: auto;
+}
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.box {
+  width: 100%;
+  height: 300px;
+  background: #666;
+  margin-bottom: 16px;
+}
+footer {
+  max-width: 100%;
+  height: 24px;
+  background: #333;
+  text-align: center;
+}
+small {
+  color: #fff;
+  font-size: 13px;
+}
