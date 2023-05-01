@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+li {
+  flex: 0 0 33.33%;
+  display: flex;
+  flex-flow: column;
+  border: 1px solid #666;
+  padding: 8px;
+}
+p {
+  margin-top: 8px;
+}
+a {
+  display: inline-block;
+  margin-top: auto;
+  text-decoration: none;
+  text-align: center;
+  background: #333;
+  color: #fff;
+}
