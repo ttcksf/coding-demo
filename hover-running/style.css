@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container img{
+  width: 200px;
+  /* keyframesの名前 */
+  animation-name: img-move;
+  /* アニメーションの長さ */
+  animation-duration: 0.5s;
+  /* アニメーションの繰り返し */
+  animation-iteration-count: infinite;
+  /* アニメーションの一時停止 */
+  animation-play-state: paused;
+  /* アニメーションの変化具合 */
+  animation-timing-function: ease-in-out;
+}
+.container img:hover{
+  /* アニメーションの再生 */
+  animation-play-state: running;
+}
+/* 参考URL
+https://meet-the-onepiece.com/ */
+@keyframes img-move{
+  /* 開始時 */
+  0%{
+    transform: rotate(0);
+  }
+  20%{
+    transform: rotate(-8deg);
+  }
+  40%{
+    transform: rotate(8deg);
+  }
+  60%{
+    transform: rotate(-4deg);
+  }
+  80%{
+    transform: rotate(4deg);
+  }
+  /* 終了時 */
+  100%{
+    transform: rotate(0);
+  }
+}
