@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+pre{
+  width: 300px;
+  padding: 16px 0;
+  background: #333;
+  color: #fff;
+}
