@@ -5,6 +5,7 @@
 }
 .container {
   width: 320px;
+  padding: 8px;
 }
 ul {
   list-style: none;

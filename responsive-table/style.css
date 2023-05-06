@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  /* PC時にはスクロールバーを非表示にする */
+  /* overflow-x: auto; */
+
+}
+@media (max-width: 767px) {
+  .container{
+    /* overflow-x: scroll; */
+    display: block;
+  }
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+@media (max-width: 767px) {
+  table{
+    display: block;
+  }
+}
+th,td{
+  border: 1px solid #333;
+  padding: 8px;
+  width: 100px;
+}
+@media (max-width: 767px) {
+  th,td{
+    /* スマホ時は横幅を広げる */
+    display: block;
+    width: 100%;
+  }
+  th{
+    margin-top: 16px;
+  }
+}
+th{
+  background:#394867 ;
+  color: #F1F6F9;
+  /* 最低サイズを指定する */
+  min-width: 150px;
+}
+.text{
+  /* 最低サイズを指定する */
+  min-width: 300px;
+}
+.btn{
+  /* 最低サイズを指定する */
+  min-width:150px;
+}
+a{
+  display: inline-block;
+  background: #212A3E;
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: #F1F6F9;
+  width: 100%;
+  text-align: center;
+}
