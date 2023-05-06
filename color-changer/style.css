@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width:800px;
+  height: 400px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #CA3E47;
+  /* keyframesの名前 */
+  animation-name: bg-change;
+  /* アニメーションの長さ */
+  animation-duration: 4.0s;
+  /* アニメーションの繰り返し */
+  animation-iteration-count: infinite;
+  /* アニメーションが開始するまでの時間 */
+  animation-delay: 1.0s;
+  /* アニメーションの変化具合 */
+  animation-timing-function: linear;
+  /* アニメーションの再生順番 */
+  animation-direction: alternate;
+}
+
+/* transitionと違って中間地点を表現できる */
+@keyframes bg-change{
+  /* 開始時 */
+  0%{
+    background: #000;
+  }
+  /* 半分のとき */
+  20%{
+    background: #696969;
+  }
+  40%{
+    background: #808080;
+  }
+  60%{
+    background: #a9a9a9;
+  }
+  80%{
+    background: #c0c0c0;
+  }
+  /* 終了時 */
+  100%{
+    background: #d3d3d3;
+  }
+}
