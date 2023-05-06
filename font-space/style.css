@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text1{
+  width: 150px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.text2{
+  width: 100%;
+  height: 50px;
+  border: 1px solid #333;
+  font-size: 16px;
+  /* 親要素の高さにすることで垂直方向に中央揃えするときにも使える */
+  line-height: 50px;
+}
+.text3{
+  font-size: 16px;
+  letter-spacing: 4px;
+}
+.text4{
+  letter-spacing: 8px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
