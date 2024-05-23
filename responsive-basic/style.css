@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* PCファースト */
+/* .container {
+  border: 1px solid #333;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.image {
+  width: 40%;
+}
+.image img {
+  width: 100%;
+}
+@media (max-width: 960px) {
+  .container {
+    display: block;
+  }
+  .image {
+    width: 100%;
+  }
+} */
+
+/* SPファースト */
+.container {
+  max-width: 100%;
+  border: 1px solid #333;
+}
+.image {
+  width: 100%;
+}
+.image img {
+  width: 100%;
+}
+@media (min-width: 960px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .image {
+    width: 40%;
+  }
+}
