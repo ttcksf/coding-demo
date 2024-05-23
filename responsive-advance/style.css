@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* PCファースト(ブレークポイントを複数作るときは大きいものから表示内容を確認して書き変えていく) */
+.container {
+  border: 1px solid #333;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.image {
+  width: 40%;
+}
+.image img {
+  width: 100%;
+  max-width: 100%;
+}
+@media (max-width: 960px) {
+  .container {
+    display: block;
+  }
+  .image {
+    width: 100%;
+    text-align: center;
+  }
+  .image img {
+    max-width: 400px;
+  }
+}
+@media (max-width: 440px) {
+  .container {
+  }
+  .image {
+    width: 100%;
+  }
+  .image img {
+    max-width: 100%;
+  }
+}
+
+/* SPファースト(ブレークポイントを複数作るときは小さいものから表示内容を確認して書き変えていく) */
+/* .container {
+  max-width: 100%;
+  border: 1px solid #333;
+}
+.image {
+  width: 100%;
+}
+.image img {
+  width: 100%;
+}
+@media (min-width: 440px) {
+  .container {
+  }
+  .image {
+    width: 100%;
+    text-align: center;
+  }
+  .image img {
+    max-width: 400px;
+  }
+}
+@media (min-width: 960px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .image {
+    width: 40%;
+  }
+  .image img {
+    max-width: 100%;
+  }
+} */
