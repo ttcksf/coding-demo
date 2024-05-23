@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  border: 1px solid #333;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.image {
+  /* width: 40%; */
+  /* デザインカンプから割合を決める方法 */
+  /* 1.デザインカンプの親要素と子要素のサイズを基準に％を算出する */
+  /* width: calc((400 / 960) * 100%); */
+  /* 2.デザインカンプの余白を基準に要素の％を算出する */
+  width: calc((100% - 40px) / 2);
+}
+.image img {
+  width: 100%;
+}
+@media (max-width: 960px) {
+  .container {
+    display: block;
+  }
+  .image {
+    width: 100%;
+  }
+}
