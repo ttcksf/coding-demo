@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  border: 1px solid #333;
+  max-width: 960px;
+  display: flex;
+  /* 隙間の活用パターン */
+  /* justify-content: center; */
+  /* justify-content: space-around; */
+  justify-content: space-between;
+}
+.image {
+  /* width: 50%; */
+  /* わざと隙間を作る */
+  width: 40%;
+}
+.image img {
+  width: 100%;
+}
+@media (max-width: 960px) {
+  .container {
+    max-width: 100%;
+    /* 横並びの解除 */
+    display: block;
+  }
+  /* 縦並びにするなら横幅も変える */
+  .image {
+    width: 100%;
+  }
+}
