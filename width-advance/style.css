@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  border: 1px solid #333;
+  padding: 16px;
+  /* 最大幅を指定してmarginをautoにすると中央寄せになる */
+  max-width: 960px;
+  margin: 0 auto;
+}
+@media (max-width: 960px) {
+  .container {
+    /* 100%にすると親要素までの制限になる */
+    /* レスポンシブでもはみ出なくなる */
+    max-width: 100%;
+  }
+  /* 他に100％を超える要素がある場合には全てに指定する */
+  img {
+    max-width: 100%;
+  }
+}
