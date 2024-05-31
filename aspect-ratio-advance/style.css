@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 横だけ伸縮して縦が固定のまま */
+.container {
+  width: 25%;
+  height: 200px;
+  background: red;
+  margin-bottom: 40px;
+}
+/* 縦横が比率を保って伸縮する */
+/* .wrapper {
+  width: 25%;
+  aspect-ratio: 4 / 3;
+  background: blue;
+} */
+/* 昔のやり方 */
+/* .wrapper {
+  width: 25%;
+  background: blue;
+  position: relative;
+}
+.wrapper::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+} */
