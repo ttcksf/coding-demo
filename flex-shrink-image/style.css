@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 文章量によって高さが変わってしまう時の対処法 */
+.item {
+  display: flex;
+  width: 800px;
+  margin-bottom: 40px;
+  border: 1px solid #333;
+}
+/* 画像のサイズを指定 */
+.image {
+  width: 200px;
+}
+/* 文章のサイズを指定 */
+.content {
+  width: calc(100% - 200px);
+}
+.image img {
+  width: 100%;
+  /* 縦サイズを合わせることで文章と同じ高さになる */
+  height: 100%;
+  /* そのままだと比率で崩れるので拡大指定 */
+  object-fit: cover;
+}
