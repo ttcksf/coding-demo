@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 背景色を全体に敷き詰める */
+section {
+  /* marginではなくpaddingにすることで余白にも背景をつけることができる */
+  padding-top: 16px;
+  padding-bottom: 16px;
+  /* margin-top: 16px; */
+  /* margin-bottom: 16px; */
+}
+/* 特定のセクションだけ背景色をつける */
+section.bg {
+  background: #3abef9;
+}
+/* 背景をセクションにつけて、コンテンツは別の要素で囲っておく */
+div {
+  max-width: 960px;
+  margin: 0 auto;
+}
