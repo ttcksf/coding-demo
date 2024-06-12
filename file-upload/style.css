@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 32px;
+}
+input[type="file"] {
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+}
+.file {
+  display: inline-block;
+  width: 240px;
+  text-align: center;
+  padding: 8px 16px;
+  background: #102c57;
+  color: #fff;
+  cursor: pointer;
+}
