@@ -10,13 +10,13 @@
   cursor: pointer;
   background: #050c9c;
   color: #fff;
-  padding: 16px;
   border-radius: 16px;
   width: 320px;
   font-size: 24px;
   margin-bottom: 16px;
 }
 .btn1 {
+  padding: 16px;
   position: relative;
 }
 .btn1::after {
@@ -30,6 +30,9 @@
   border-top: 4px solid #fff;
   border-right: 4px solid #fff;
   transform: rotate(45deg) translateY(-60%);
+}
+.btn2 {
+  padding: 4px;
 }
 .btn2 span {
   font-size: 14px;

@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container1 {
+  width: 100%;
+  height: 300px;
+  background: red;
+}
+/* インライン要素はそのままだとサイズ指定ができない */
+.container2 {
+  display: inline-block;
+  width: 100%;
+  height: 300px;
+  background: blue;
+}
+/* ブロック要素の横幅は指定しないと親要素いっぱいまで広がる */
+.title1 {
+  background: yellow;
+}
+/* インライン要素は親要素いっぱいまで広がらないため、HTMLの書き方だけで横並びにすることができる */
+.title2 {
+  background: green;
+}
