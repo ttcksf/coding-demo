@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container1 {
+  width: 300px;
+  height: 200px;
+  background: red;
+  animation: container1 1s 1s ease-out forwards;
+}
+.container2 {
+  width: 300px;
+  height: 200px;
+  background: blue;
+  animation: container2 1s 1s ease-out forwards;
+  /* 2.方向を決められる */
+  transform-origin: top left;
+  transform-origin: bottom left;
+  /* 縮小時 */
+  transform-origin: top right;
+  transform-origin: bottom right;
+}
+@keyframes container1 {
+  0% {
+    width: 300px;
+  }
+  100% {
+    /* 拡大 */
+    width: 600px;
+    /* 縮小 */
+    width: 0px;
+  }
+}
+/* 1.scaleはwidthとheightの両方のサイズになる */
+@keyframes container2 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    /* 拡大 */
+    transform: scale(2);
+    /* 縮小 */
+    transform: scale(0);
+  }
+}
