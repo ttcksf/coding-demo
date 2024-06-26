@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 64px;
+}
+.btn span {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 8px;
+  background: #333;
+  margin-bottom: 8px;
+  transition: 0.4s;
+  transform-origin: center;
+}
+.btn.active span:nth-child(1) {
+  transform: rotate(45deg) scaleX(2) translateY(21px);
+}
+.btn.active span:nth-child(2) {
+  transform: scale(0);
+}
+.btn.active span:nth-child(3) {
+  transform: rotate(-45deg) scaleX(2) translateY(-23px);
+}
