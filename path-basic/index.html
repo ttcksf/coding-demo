@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- HTMLと同じ階層にあるimage.pngを指している -->
+    <!-- <img src="./images/image.png" alt="" /> -->
+    <!-- ルートからのパスになるため表示できない -->
+    <!-- <img src="/images/image.png" alt="" /> -->
+    <!-- 同じ位置にいる「./」は省略してもOK -->
+    <img src="images/image.png" alt="" />
+    <!-- このように書くと絶対パス（ドメインが変わったら使えないので柔軟性が低い） -->
+    <!-- <img src="http://127.0.0.1:5500/path-basic/images/image.png" alt="" /> -->
+    <!-- 子供から親にアクセスするには「../」になる -->
+    <!-- <img src="../image.png" alt="" /> -->
+    <!-- 隣のディレクトリにアクセスするには「../」で一度親までアクセスしてから対象のディレクトリ名にアクセスすることになる -->
+    <img src="../path-basic2/images/image.png" alt="" />
+  </body>
+</html>
