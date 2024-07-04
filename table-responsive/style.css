@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  /* 1.タブレット時にはスクロールバーを非表示にする */
+  overflow-x: auto;
+}
+@media (max-width: 767px) {
+  .container {
+    /* 1.タブレット時にはスクロールバーを非表示にする */
+    overflow-x: scroll;
+  }
+}
+table {
+  border-collapse: collapse;
+  width: 561px;
+}
+th,
+td {
+  border: 1px solid #333;
+  padding: 8px;
+  font-size: 16px;
+}
+th {
+  background: #ff4191;
+  color: #fff;
+  width: 160px;
+}
+td {
+  width: 400px;
+}
+/* 2.スマホ時に縦並びにする */
+@media (max-width: 428px) {
+  table {
+    width: 100%;
+  }
+  th {
+    /* table要素からblock要素に切り替えないと100%にならない */
+    display: block;
+    width: 100%;
+  }
+  td {
+    display: block;
+    width: 100%;
+  }
+}
