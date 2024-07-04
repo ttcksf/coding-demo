@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.map {
+  width: 100%;
+  position: relative;
+  padding-bottom: calc((600 / 1920) * 100%);
+  height: 0;
+  overflow: hidden;
+}
+/* iframeは重ね合わせ親要素のサイズに固定する */
+.map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* スマホ時には縦横比を横長から縦長か正方形に変更する */
+@media (max-width: 428px) {
+  .map {
+    padding-bottom: calc((400 / 400) * 100%);
+  }
+}
