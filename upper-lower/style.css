@@ -1,0 +1,9 @@
+.title1 {
+  text-transform: uppercase;
+}
+.title2 {
+  text-transform: lowercase;
+}
+.title3 {
+  text-transform: capitalize;
+}
