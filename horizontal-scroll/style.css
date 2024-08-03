@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  background-color: #333;
+  padding: 20px;
+  /* 横幅のスクロール量だけ縦幅を持っておく */
+  height: 500vh;
+  overflow: visible;
+  view-timeline-name: --section-pin;
+  view-timeline-axis: block;
+}
+
+.sticky {
+  width: 100vw;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  overflow-x: hidden;
+}
+
+.images {
+  /* 画像の横幅全体 */
+  width: 300vmax;
+  height: 100vh;
+  /* 画像を折り返しなしで横並び */
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  animation: horizontal linear both;
+  animation-timeline: --section-pin;
+  animation-range: contain 0% contain 100%;
+}
+
+@keyframes horizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
