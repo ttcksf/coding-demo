@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+article {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+p {
+  color: #666;
+}
+.reading-progress {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #666;
+  z-index: 999;
+}
+.bar {
+  height: 24px;
+  background: #7c00fe;
+  animation: width;
+  animation-timeline: scroll(y);
+}
+@keyframes width {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
