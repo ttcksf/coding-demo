@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.cards {
+  /* カード4枚が縦方向に並ぶレイアウト */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 87vh);
+  /* カード1枚の高さ */
+  gap: 87vh;
+  /* 余白の合計 */
+  padding-bottom: calc(4 * 72px);
+  margin-bottom: 4vw;
+}
+.card1 {
+  --index: 1;
+}
+.card2 {
+  --index: 2;
+}
+.card3 {
+  --index: 3;
+}
+.card4 {
+  --index: 4;
+}
+.card {
+  /* スクロールしても画面上部に固定にする */
+  position: sticky;
+  top: 0;
+  /* 1枚ずつ余白を大きくしている */
+  padding-top: calc(var(--index) * 72px);
+}
+.card1 .card-body {
+  background: #52b2cf;
+}
+.card2 .card-body {
+  background: #7ec4cf;
+}
+.card3 .card-body {
+  background: #9cadce;
+}
+.card4 .card-body {
+  background: #d4afb9;
+}
+.card-body {
+  padding: 32px;
+  border-radius: 56px;
+  height: 87vh;
+}
