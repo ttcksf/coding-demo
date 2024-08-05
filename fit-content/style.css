@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  background: red;
+  /* 文字の幅だけの横幅にできる（インライン要素にしても良いが余白が指定できなかったり改行できなかったり不都合がある） */
+  /* display: inline; */
+  width: max-content;
+}
+p {
+  background: blue;
+  /* ただレスポンシブには対応していない */
+  /* width: max-content; */
+  /* レスポンシブに対応するにはfit-content  */
+  width: fit-content;
+}
