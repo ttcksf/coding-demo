@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.card {
+  width: fit-content;
+  padding: 8px;
+  background: yellow;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.4s;
+}
+.card.active {
+  opacity: 1;
+  transform: translateX(0);
+}
