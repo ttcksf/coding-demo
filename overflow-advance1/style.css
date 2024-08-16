@@ -1,0 +1,11 @@
+div {
+  width: 200px;
+  height: 200px;
+  background: yellow;
+  padding: 10px;
+  /* 下のpaddingははみ出したコンテンツの下にあるので見えない */
+  /* overflow: scroll; */
+  /* overflow: hidden; */
+  overflow: clip;
+  overflow-clip-margin: content-box;
+}
