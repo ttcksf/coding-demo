@@ -1,0 +1,17 @@
+/* hasは特定のセレクタを持つセレクタを指定できる */
+nav ul li:has(> ul) {
+  background: yellow;
+}
+/* これと同じ */
+/* li.has_submenu {
+  background: yellow;
+} */
+
+/* これだとサブメニューのliも対象になってしまうので以下を追加 */
+/* nav ul li {
+  background: grey;
+} */
+/* これでもOK。notは反転条件を作ることができる */
+nav ul li:not(:has(> ul)) {
+  background: grey;
+}
