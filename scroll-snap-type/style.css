@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 32px;
+}
+.cards {
+  display: flex;
+  gap: 16px;
+  width: 320px;
+  border: 1px solid #333;
+  /* 溢れたものをスクロールで表示するものだが、力加減に関係なくスクロールされるうえにコンテンツきっちりに収まるスクロールが難しい */
+  overflow-x: scroll;
+  /* 少しの力では動かず大きくスライドした時に動いてコンテンツきっちりに収まるようなスクロールになる */
+  scroll-snap-type: x mandatory;
+}
+.card {
+  width: 320px;
+  padding: 16px;
+  flex: 1 0 auto;
+  scroll-snap-align: center;
+}
