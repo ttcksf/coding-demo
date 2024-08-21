@@ -1,0 +1,22 @@
+.container {
+  width: 400px;
+  height: 400px;
+  background: yellow;
+  /* 従来の書き方 */
+  /* display: flex; */
+  /* align-items:center; */
+  /* justify-content: center; */
+
+  /* 新しい書き方（display:flex;とalign-items:center;が合体した） */
+  align-content: center;
+
+  /* 文字の場合は親要素にtext-align:center;を入れるだけ */
+  text-align: center;
+}
+.child {
+  width: 100px;
+  height: 100px;
+  background: green;
+  /* 新しい書き方（自分自身を水平方向の中央揃えに持っていく） */
+  margin: 0 auto;
+}
