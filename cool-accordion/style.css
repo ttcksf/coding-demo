@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.accordion {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  list-style: none;
+}
+.item {
+  /* 拡大、縮小、サイズ */
+  flex: 0 0 100px;
+  height: 100px;
+  background: skyblue;
+  border-radius: 16px;
+}
+.opened {
+  flex: 0 0 200px;
+}
