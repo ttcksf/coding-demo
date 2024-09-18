@@ -1,0 +1,21 @@
+@property --bgColor {
+  syntax: "<color>";
+  /* inherits: false; */
+  inherits: true;
+  initial-value: #e6e6e6;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+  /* background-color: var(--bgColor, #e6e6e6); */
+  background-color: var(--bgColor);
+}
+.black {
+  /* --bgColor: #333; */
+  /* これができてしまう */
+  /* --bgColor: 100px; */
+  /* 間違えた値だとデフォ値を採用してくれる */
+  --bgColor: #333;
+}
