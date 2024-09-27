@@ -1,7 +1,6 @@
 @property --bgColor {
   syntax: "<color>";
-  /* inherits: false; */
-  inherits: true;
+  inherits: false;
   initial-value: #e6e6e6;
 }
 

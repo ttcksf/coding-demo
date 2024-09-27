@@ -1,0 +1,26 @@
+.button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.button span {
+  width: 24px;
+  height: 2.4px;
+  background: #333;
+  border-radius: 2px;
+  transition: all 0.4s ease-in-out;
+}
+:root[open] .button span:nth-child(1) {
+  transform: translate(0, 6px) rotate(45deg);
+}
+:root[open] .button span:nth-child(2) {
+  transform: scaleX(0);
+  opacity: 0;
+}
+:root[open] .button span:nth-child(3) {
+  transform: translate(0, -7px) rotate(-45deg);
+}
