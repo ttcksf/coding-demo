@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 32px;
+}
+.box {
+  width: 300px;
+  height: 400px;
+  padding: 32px;
+  background: #333;
+  color: #fff;
+  position: relative;
+}
+.box span {
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  transition: 0.1s;
+  transform: translate(-25%, -75%);
+  mix-blend-mode: difference;
+  overflow: hidden;
+}
+.box:hover span {
+  width: 300px;
+  height: 300px;
+}
